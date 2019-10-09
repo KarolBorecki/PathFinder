@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - SideElement
+  - ElementsCleaner
+  - DeadArea
+  - BouncySurface
+  - EnergyPowerUp
+  - Void
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - GamePPGraphics
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1371684977
+    locked: 0
+  - name: Lantern
+    uniqueID: 3381018225
+    locked: 0
+  - name: PowerUps
+    uniqueID: 1912910869
+    locked: 0
+  - name: Obstacles
+    uniqueID: 894142157
+    locked: 0
+  - name: Boundries
+    uniqueID: 2970527089
+    locked: 0
+  - name: Player
+    uniqueID: 1607853581
+    locked: 0
+  - name: Canvas
+    uniqueID: 3592962203
+    locked: 0
