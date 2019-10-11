@@ -11,8 +11,18 @@ public class Shop : MonoBehaviour
         Obstacles,
         PowerUps
     }
-    void Start()
+    public ShopCategoryManager playerCategoryManager;
+    public ShopCategoryManager themesCategoryManager;
+    public ShopCategoryManager obstaclesCategoryManager;
+    public ShopCategoryManager powerUpCategoryManager;
+
+    public PlayerShopElement[] playerShopElements;
+
+    void Awake()
     {
+        foreach (ShopElement se in playerShopElements)
+            se.category = ShopCategory.Player;
+        playerCategoryManager.elements = playerShopElements;
         
     }
 

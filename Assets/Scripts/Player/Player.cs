@@ -74,7 +74,7 @@ public class Player : MonoBehaviour
 
         if (_actualBounces > 0)
         {
-            _actualComboTime += Time.deltaTime;
+            _actualComboTime += Time.deltaTime / ((Time.deltaTime < 1) ? GetComponent<PlayerAim>().timeSlowDown : 1);
             if (_actualComboTime >= timeToLoseCombo)
                 DecreaseCombo();
         }
