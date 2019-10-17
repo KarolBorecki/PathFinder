@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleShopElement : MonoBehaviour
+[System.Serializable]
+public class ObstacleShopElement : ShopElement
 {
     // Start is called before the first frame update
     void Start()

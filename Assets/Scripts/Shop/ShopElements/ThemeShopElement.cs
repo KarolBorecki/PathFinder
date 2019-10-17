@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThemeShopElement : MonoBehaviour
+[System.Serializable]
+public class ThemeShopElement : ShopElement
 {
     // Start is called before the first frame update
     void Start()

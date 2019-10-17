@@ -21,11 +21,11 @@ public class PanelResponsivityExpaneder : MonoBehaviour
         {
             case Size.Height:
                for(int i = 0; i<=childrenToExpand.Count-1; i++)
-                   childrenToExpand[i].sizeDelta = new Vector2(childrenToExpand[i].sizeDelta.x, Screen.height*eachChildrenPartSize[i]);
+                   childrenToExpand[i].sizeDelta = new Vector2(childrenToExpand[i].sizeDelta.x, Screen.height* eachChildrenPartSize[i]);
                break;
             case Size.Width:
                for(int i = 0; i<=childrenToExpand.Count-1; i++)
-                   childrenToExpand[i].sizeDelta = new Vector2(Screen.width*eachChildrenPartSize[i],childrenToExpand[i].sizeDelta.y);
+                   childrenToExpand[i].sizeDelta = new Vector2(Screen.width* eachChildrenPartSize[i],childrenToExpand[i].sizeDelta.y);
                break;
             
             default:

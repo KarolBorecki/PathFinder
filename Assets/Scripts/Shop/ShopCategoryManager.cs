@@ -8,39 +8,25 @@ public class ShopCategoryManager : MonoBehaviour
 
     public Shop.ShopCategory category;
     public ShopElement[] elements;
-
-    public ShopCard card;
-
-    public Button RightButton;
-    public Button LeftButton;
+    public ShopCard shopCard;
+    public RectTransform cardsParent;
 
     private int _elementIndex;
 
     void Start()
     {
-        card.shopCategoryManager = this;
-        card.LoadElement(elements[_elementIndex]);
-
-        CheckButtons();
+        LoadContent();
     }
 
-    public void LoadNew(bool right)
+    public void LoadContent()
     {
-        _elementIndex += right ? 1 : -1;
-        card.LoadElement(elements[_elementIndex]);
-
-        CheckButtons();
-    }
-
-    private void CheckButtons()
-    {
-        RightButton.interactable = true;
-        LeftButton.interactable = true;
-        if (_elementIndex >= elements.Length - 1) RightButton.interactable = false;
-        else if (_elementIndex <= 0) LeftButton.interactable = false;
-
-        RightButton.transform.GetChild(0).gameObject.SetActive(RightButton.interactable);
-        LeftButton.transform.GetChild(0).gameObject.SetActive(LeftButton.interactable);
+        int i = 0;
+        foreach(ShopElement se in elements)
+        {
+            ShopCard newElementCard = Instantiate(shopCard, cardsParent);
+            newElementCard.LoadElement(elements[i]);
+            ++i;
+        }
     }
 
 }
