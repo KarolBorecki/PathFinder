@@ -31,6 +31,7 @@ public class TextHandler : MonoBehaviour
 
     public void SetText(int number)
     {
+        textNumber = number;
         handledText.text = textBefore + number;
     }
 }

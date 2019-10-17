@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ShopCategoryManager : MonoBehaviour
 {
-
+    public Shop shop;
     public Shop.ShopCategory category;
     public ShopElement[] elements;
     public ShopCard shopCard;
@@ -24,6 +24,7 @@ public class ShopCategoryManager : MonoBehaviour
         foreach(ShopElement se in elements)
         {
             ShopCard newElementCard = Instantiate(shopCard, cardsParent);
+            newElementCard.shopCategoryManager = this;
             newElementCard.LoadElement(elements[i]);
             ++i;
         }

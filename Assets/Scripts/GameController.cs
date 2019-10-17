@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
     
     public int money;
     public TextHandler moneyCounter;
+    public TextHandler shopMoneyCounter;
 
     public EnergyBar energyBar;
     
@@ -26,7 +27,7 @@ public class GameController : MonoBehaviour
     
     private void Start()
     {
-        moneyCounter.Increase(money);
+        SetMoneyText();
     }
 
     private void Update()
@@ -86,16 +87,31 @@ public class GameController : MonoBehaviour
             list[i].SetActive(active);
     }
 
+    private void SetMoneyText()
+    {
+        moneyCounter.SetText(money);
+        shopMoneyCounter.SetText(money);
+    }
+
     public void AddMoney(int amount)
     {
         money += amount;
         moneyCounter.Increase(amount);
+        shopMoneyCounter.Increase(amount);
     }
 
     public void DecreaseMoney(int amount)
     {
         money -= amount;
-        moneyCounter.Increase(amount);
+        moneyCounter.Decrease(amount);
+        shopMoneyCounter.Decrease(amount);
+    }
+
+    public bool ShopElementBuy(int price)
+    {
+        if (money < price) return false;
+        DecreaseMoney(price);
+        return true;
     }
 
     private void MakeContinueAble()

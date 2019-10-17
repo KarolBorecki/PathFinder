@@ -11,6 +11,10 @@ public class Shop : MonoBehaviour
         Obstacles,
         PowerUps
     }
+
+    public GameController gameController;
+    public TextHandler moneyText;
+
     public ShopCategoryManager playerManager;
     public ShopCategoryManager themesManager;
     public ShopCategoryManager obstaclesManager;
