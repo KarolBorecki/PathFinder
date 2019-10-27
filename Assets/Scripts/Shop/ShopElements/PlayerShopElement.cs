@@ -6,7 +6,5 @@ using UnityEngine;
 public class PlayerShopElement : ShopElement
 {
     public Sprite newPlayerLook;
-    public Color newColor;
-    
-    
+    public float scale = .5f;
 }

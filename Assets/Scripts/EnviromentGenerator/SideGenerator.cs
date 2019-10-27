@@ -13,7 +13,6 @@ public class SideGenerator : MonoBehaviour
 
     private bool _isGenerating;
 
-    private int _countingToDestroyObstacles = 0;
     private void Start() {
         _randomDistance = Random.Range(distance.x, distance.y);
     }

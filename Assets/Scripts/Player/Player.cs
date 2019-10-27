@@ -262,4 +262,12 @@ public class Player : MonoBehaviour
         AddEnergy(other.gameObject.GetComponent<EnergyPowerUp>().energy);
         other.gameObject.GetComponent<DestroyAfterTime>().DestroyItSelf();
     }
+
+    //public void SetPlayerLook(Sprite newSprite, Color newColor)
+    //{
+    //    SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+
+    //    spriteRenderer.sprite = newSprite;
+    //    spriteRenderer.color = newColor;
+    //}
 }

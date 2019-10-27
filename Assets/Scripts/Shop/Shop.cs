@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,6 +16,9 @@ public class Shop : MonoBehaviour
     public GameController gameController;
     public TextHandler moneyText;
 
+    public ChooseableShopCard actualChoosenPlayer;
+    public SpriteRenderer player;
+    public TrailRenderer playerTrail;
     public ShopCategoryManager playerManager;
     public ShopCategoryManager themesManager;
     public ShopCategoryManager obstaclesManager;
@@ -45,8 +49,11 @@ public class Shop : MonoBehaviour
 
     }
 
-    void Update()
+    public void SetNewPlayer(PlayerShopElement newPlayer)
     {
-        
+        player.GetComponent<SpriteRenderer>().color = new Color(newPlayer.color.r, newPlayer.color.g, newPlayer.color.b);
+        playerTrail.startColor = new Color(newPlayer.color.r, newPlayer.color.g, newPlayer.color.b);
+        playerTrail.endColor = new Color(newPlayer.color.r, newPlayer.color.g, newPlayer.color.b, 0);
+        player.sprite = newPlayer.newPlayerLook;
     }
 }

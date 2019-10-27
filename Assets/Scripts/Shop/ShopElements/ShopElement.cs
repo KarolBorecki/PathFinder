@@ -11,6 +11,7 @@ public class ShopElement{
     public int price;
     public int level;
     public Sprite elementInShopImg;
+    public Color color = new Color(1,1,1,1f);
 
     public void AddLevel()
     {

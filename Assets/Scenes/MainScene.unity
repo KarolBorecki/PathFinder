@@ -154,7 +154,7 @@ MonoBehaviour:
   shop: {fileID: 1178668165}
   category: 1
   elements: []
-  shopCard: {fileID: 2883142531241054604, guid: e0e9e319ebe0849cfbd0c26220fade4f,
+  shopCard: {fileID: 2998384778921101267, guid: 9276559bdc7e84fbd9d5be2244c974b4,
     type: 3}
   cardsParent: {fileID: 1627292009}
 --- !u!114 &14026397
@@ -5630,7 +5630,7 @@ SpriteRenderer:
   m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
-  m_Color: {r: 0.69411767, g: 0.050980393, b: 0.7882353, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6139,7 +6139,6 @@ GameObject:
   - component: {fileID: 371919856}
   - component: {fileID: 371919855}
   - component: {fileID: 371919858}
-  - component: {fileID: 371919857}
   m_Layer: 5
   m_Name: BuyAreaPanel
   m_TagString: Untagged
@@ -6203,25 +6202,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371919853}
   m_CullTransparentMesh: 0
---- !u!114 &371919857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371919853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4370880bf9aa14e4780c2067e56269a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sizeToExpand: 1
-  eachChildrenPartSize:
-  - 0.6734
-  - 0.05
-  childrenToExpand:
-  - {fileID: 1585883227}
-  - {fileID: 552965424}
 --- !u!114 &371919858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6337,7 +6317,7 @@ MonoBehaviour:
   shop: {fileID: 1178668165}
   category: 0
   elements: []
-  shopCard: {fileID: 2883142531241054604, guid: e0e9e319ebe0849cfbd0c26220fade4f,
+  shopCard: {fileID: 2998384778921101267, guid: 9276559bdc7e84fbd9d5be2244c974b4,
     type: 3}
   cardsParent: {fileID: 7251928377217859659}
 --- !u!114 &423657288
@@ -11341,7 +11321,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: 0}
+  m_SizeDelta: {x: -60, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &515775817
 MonoBehaviour:
@@ -11364,7 +11344,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 200, y: 300}
-  m_Spacing: {x: 100, y: 80}
+  m_Spacing: {x: 20, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 3
 --- !u!114 &515775818
@@ -11636,9 +11616,9 @@ RectTransform:
   m_Father: {fileID: 1503564001}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 540, y: -150}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 810}
   m_SizeDelta: {x: 756, y: 228}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &552965425
@@ -12490,7 +12470,7 @@ MonoBehaviour:
   shop: {fileID: 1178668165}
   category: 2
   elements: []
-  shopCard: {fileID: 2883142531241054604, guid: e0e9e319ebe0849cfbd0c26220fade4f,
+  shopCard: {fileID: 4399281441686518801, guid: e73354f4c80b64b8c8799d91e872cb9f,
     type: 3}
   cardsParent: {fileID: 515775816}
 --- !u!114 &726058163
@@ -13000,6 +12980,8 @@ GameObject:
   - component: {fileID: 1096738626}
   - component: {fileID: 1096738625}
   - component: {fileID: 1096738624}
+  - component: {fileID: 1096738628}
+  - component: {fileID: 1096738627}
   m_Layer: 5
   m_Name: HomeButton
   m_TagString: Untagged
@@ -13127,6 +13109,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096738622}
   m_CullTransparentMesh: 0
+--- !u!114 &1096738627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096738622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4370880bf9aa14e4780c2067e56269a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeToExpand: 1
+  eachChildrenPartSize:
+  - 0.1
+  childrenToExpand:
+  - {fileID: 1096738623}
+--- !u!114 &1096738628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096738622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4370880bf9aa14e4780c2067e56269a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeToExpand: 0
+  eachChildrenPartSize:
+  - 0.17
+  childrenToExpand:
+  - {fileID: 1096738623}
 --- !u!1 &1170568385
 GameObject:
   m_ObjectHideFlags: 0
@@ -13294,6 +13310,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameController: {fileID: 1718873474}
   moneyText: {fileID: 552965427}
+  actualChoosenPlayer: {fileID: 0}
+  player: {fileID: 132658217}
+  playerTrail: {fileID: 1725608186}
   playerManager: {fileID: 415651690}
   themesManager: {fileID: 14026396}
   obstaclesManager: {fileID: 726058162}
@@ -13301,108 +13320,151 @@ MonoBehaviour:
   playerShopElements:
   - name: Player 1
     category: 0
-    price: 1200
+    price: 0
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 907764f7d4529457089f94cea937c3b9, type: 3}
-    newPlayerLook: {fileID: 21300000, guid: 23f08f42e641d469c9ec8163941637bd, type: 3}
-    newColor: {r: 1, g: 0, b: 0.91517925, a: 1}
+    elementInShopImg: {fileID: 21300000, guid: 44a1df495c4444ee2b9e90af52f59006, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
+    scale: 0.7
   - name: Player 2
     category: 0
     price: 2400
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 02207a55fa3194b56bb4202dcc6c4143, type: 3}
-    newPlayerLook: {fileID: 21300000, guid: 23f08f42e641d469c9ec8163941637bd, type: 3}
-    newColor: {r: 0, g: 0.21829796, b: 1, a: 1}
+    elementInShopImg: {fileID: 21300000, guid: 44a1df495c4444ee2b9e90af52f59006, type: 3}
+    color: {r: 1, g: 0, b: 0, a: 1}
+    newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
+    scale: 0.7
   - name: Player 3
     category: 0
     price: 3600
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: ad0bba4412d134d6789643e65a3c61fa, type: 3}
-    newPlayerLook: {fileID: 21300000, guid: 23f08f42e641d469c9ec8163941637bd, type: 3}
-    newColor: {r: 1, g: 0, b: 0.07898474, a: 1}
+    elementInShopImg: {fileID: 21300000, guid: 44a1df495c4444ee2b9e90af52f59006, type: 3}
+    color: {r: 0, g: 1, b: 0.04445076, a: 1}
+    newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
+    scale: 0.7
   - name: Player 3
     category: 0
     price: 3600
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 3b83a74dc694444e2b30c1f72bb9ac7d, type: 3}
-    newPlayerLook: {fileID: 21300000, guid: 23f08f42e641d469c9ec8163941637bd, type: 3}
-    newColor: {r: 1, g: 0, b: 0.07898474, a: 1}
+    elementInShopImg: {fileID: 21300000, guid: 44a1df495c4444ee2b9e90af52f59006, type: 3}
+    color: {r: 1, g: 0.976174, b: 0, a: 1}
+    newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
+    scale: 0.5
   - name: Player 3
     category: 0
     price: 4224
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 690fb19eaaf374f89a66232ff38e3577, type: 3}
-    newPlayerLook: {fileID: 21300000, guid: 23f08f42e641d469c9ec8163941637bd, type: 3}
-    newColor: {r: 1, g: 0, b: 0.07898474, a: 1}
+    elementInShopImg: {fileID: 21300000, guid: 44a1df495c4444ee2b9e90af52f59006, type: 3}
+    color: {r: 0.043032646, g: 0, b: 1, a: 1}
+    newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
+    scale: 0.7
   - name: Player 3
     category: 0
     price: 235235
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 7f6c09043e65c42c5bd825403972e1cc, type: 3}
-    newPlayerLook: {fileID: 21300000, guid: 23f08f42e641d469c9ec8163941637bd, type: 3}
-    newColor: {r: 1, g: 0, b: 0.07898474, a: 1}
+    elementInShopImg: {fileID: 21300000, guid: 44a1df495c4444ee2b9e90af52f59006, type: 3}
+    color: {r: 0, g: 0.9021225, b: 1, a: 1}
+    newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
+    scale: 0.7
   - name: Player 3
     category: 0
     price: 2214
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 02207a55fa3194b56bb4202dcc6c4143, type: 3}
-    newPlayerLook: {fileID: 21300000, guid: 23f08f42e641d469c9ec8163941637bd, type: 3}
-    newColor: {r: 1, g: 0, b: 0.07898474, a: 1}
+    elementInShopImg: {fileID: 21300000, guid: 44a1df495c4444ee2b9e90af52f59006, type: 3}
+    color: {r: 0.9657564, g: 0, b: 1, a: 1}
+    newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
+    scale: 0.7
   - name: Player 3
     category: 0
     price: 4251
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 9eea0988d5cbe41d68461f0265254177, type: 3}
-    newPlayerLook: {fileID: 21300000, guid: 23f08f42e641d469c9ec8163941637bd, type: 3}
-    newColor: {r: 1, g: 0, b: 0.07898474, a: 1}
+    elementInShopImg: {fileID: 21300000, guid: 44a1df495c4444ee2b9e90af52f59006, type: 3}
+    color: {r: 0.70089984, g: 1, b: 0, a: 1}
+    newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
+    scale: 0.7
+  - name: Player 3
+    category: 0
+    price: 436
+    level: 0
+    elementInShopImg: {fileID: 21300000, guid: 44a1df495c4444ee2b9e90af52f59006, type: 3}
+    color: {r: 1, g: 0, b: 0.54923964, a: 1}
+    newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
+    scale: 0.5
   themeShopElements:
   - name: FirstTheme
     category: 0
-    price: 1
+    price: 234
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 9eea0988d5cbe41d68461f0265254177, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
   - name: FirstTheme
     category: 0
-    price: 1
+    price: 754
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 907764f7d4529457089f94cea937c3b9, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
   - name: FirstTheme
     category: 0
-    price: 1
+    price: 124
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 02207a55fa3194b56bb4202dcc6c4143, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - name: FirstTheme
+    category: 0
+    price: 422
+    level: 0
+    elementInShopImg: {fileID: 21300000, guid: b41a3f18e7e81448a805522779ea6556, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - name: FirstTheme
+    category: 0
+    price: 1214
+    level: 0
+    elementInShopImg: {fileID: 21300000, guid: ad0bba4412d134d6789643e65a3c61fa, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - name: FirstTheme
+    category: 0
+    price: 124
+    level: 0
+    elementInShopImg: {fileID: 21300000, guid: 3e4ade924e733432f8a3226c20e17117, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
   obstacleShopElements:
   - name: FirstObstacle
     category: 0
     price: 12412
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 02207a55fa3194b56bb4202dcc6c4143, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
   - name: FirstObstacle
     category: 0
     price: 12412
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 7f6c09043e65c42c5bd825403972e1cc, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
   - name: FirstObstacle
     category: 0
     price: 12412
     level: 0
     elementInShopImg: {fileID: 21300000, guid: ad0bba4412d134d6789643e65a3c61fa, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
   powerUpShopElements:
   - name: FirstPowerUp
     category: 0
-    price: 9999
+    price: 214
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 3b83a74dc694444e2b30c1f72bb9ac7d, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
   - name: FirstPowerUp
     category: 0
-    price: 9999
+    price: 124
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 7f6c09043e65c42c5bd825403972e1cc, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
   - name: FirstPowerUp
     category: 0
-    price: 9999
+    price: 568
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 690fb19eaaf374f89a66232ff38e3577, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1307358907
 GameObject:
   m_ObjectHideFlags: 0
@@ -13905,9 +13967,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sizeToExpand: 1
   eachChildrenPartSize:
+  - 0.08
   - 0.1
-  - 0.1
-  - 0.79
+  - 0.78
   childrenToExpand:
   - {fileID: 552965424}
   - {fileID: 785177971}
@@ -13931,7 +13993,7 @@ MonoBehaviour:
     m_Bottom: 0
   m_ChildAlignment: 4
   m_Spacing: 0
-  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
@@ -14173,7 +14235,7 @@ MonoBehaviour:
   shop: {fileID: 1178668165}
   category: 3
   elements: []
-  shopCard: {fileID: 2883142531241054604, guid: e0e9e319ebe0849cfbd0c26220fade4f,
+  shopCard: {fileID: 6243529624869150630, guid: e0e9e319ebe0849cfbd0c26220fade4f,
     type: 3}
   cardsParent: {fileID: 1769525793}
 --- !u!114 &1581277567
@@ -14448,7 +14510,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 185.66667, y: 0}
+  m_SizeDelta: {x: 150, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1590636129
 MonoBehaviour:
@@ -14620,7 +14682,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: 0}
+  m_SizeDelta: {x: -60, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1627292010
 MonoBehaviour:
@@ -14643,7 +14705,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 200, y: 300}
-  m_Spacing: {x: 100, y: 80}
+  m_Spacing: {x: 20, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 3
 --- !u!114 &1627292011
@@ -15123,7 +15185,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 185.66669, y: 0}
+  m_SizeDelta: {x: 150, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1712758670
 MonoBehaviour:
@@ -15214,6 +15276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1718873475}
   - component: {fileID: 1718873474}
+  - component: {fileID: 1718873476}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -15263,6 +15326,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1718873476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718873473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a9d3cbeb8ad4ec9babb1873920e0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ThemeManager: {fileID: 14026396}
 --- !u!1 &1725608180
 GameObject:
   m_ObjectHideFlags: 0
@@ -15325,11 +15401,11 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 0.08143322
+  m_UseAutoMass: 0
+  m_Mass: 0.12
   m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 6200000, guid: bef9ebc68c2ac42b6be078c265f8b806, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -15524,8 +15600,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.8402729, g: 0, b: 1, a: 0.77254903}
-      key1: {r: 0.66253996, g: 0, b: 1, a: 0}
+      key0: {r: 1, g: 1, b: 1, a: 0.77254903}
+      key1: {r: 1, g: 1, b: 1, a: 0}
       key2: {r: 0.6434641, g: 0, b: 1, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -15533,7 +15609,7 @@ TrailRenderer:
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 4048
+      ctime1: 65535
       ctime2: 65535
       ctime3: 0
       ctime4: 0
@@ -15549,7 +15625,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 3
+      m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -15615,7 +15691,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: 0}
+  m_SizeDelta: {x: -60, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1769525794
 MonoBehaviour:
@@ -15638,7 +15714,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 200, y: 300}
-  m_Spacing: {x: 100, y: 80}
+  m_Spacing: {x: 20, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 3
 --- !u!114 &1769525795
@@ -16558,7 +16634,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Click to play
+  m_Text: Swipe to play
 --- !u!222 &2100357961
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21371,7 +21447,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: 0}
+  m_SizeDelta: {x: -60, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7251928377217859660
 MonoBehaviour:
@@ -21394,7 +21470,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 200, y: 300}
-  m_Spacing: {x: 100, y: 80}
+  m_Spacing: {x: 20, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 3
 --- !u!114 &7251928377217859661
