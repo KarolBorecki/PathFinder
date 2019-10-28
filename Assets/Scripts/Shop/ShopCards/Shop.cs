@@ -8,7 +8,7 @@ public class Shop : MonoBehaviour
     public enum ShopCategory
     {
         Skins,
-        Themes,
+        Player,
         Obstacles,
         PowerUps
     }
@@ -21,12 +21,12 @@ public class Shop : MonoBehaviour
     public TrailRenderer playerTrail;
 
     public ShopCategoryManager skinsManager;
-    public ShopCategoryManager themesManager;
+    public ShopCategoryManager playerManager;
     public ShopCategoryManager obstaclesManager;
     public ShopCategoryManager powerUpManager;
 
     public SkinShopElement[] skinsShopElements;
-    public ThemeShopElement[] themeShopElements;
+    public PlayerShopElement[] playerShopElements;
     public ObstacleShopElement[] obstacleShopElements;
     public PowerUpShopelement[] powerUpShopElements;
 
@@ -36,9 +36,9 @@ public class Shop : MonoBehaviour
             se.category = ShopCategory.Skins;
         skinsManager.elements = skinsShopElements;
 
-        foreach (ShopElement se in themeShopElements)
-            se.category = ShopCategory.Themes;
-        themesManager.elements = themeShopElements;
+        foreach (ShopElement se in playerShopElements)
+            se.category = ShopCategory.Player;
+        playerManager.elements = playerShopElements;
 
         foreach (ShopElement se in obstacleShopElements)
             se.category = ShopCategory.Obstacles;
