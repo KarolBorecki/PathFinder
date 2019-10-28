@@ -74,7 +74,7 @@ public class Player : MonoBehaviour
 
         if (_actualBounces > 0)
         {
-            _actualComboTime += Time.deltaTime / ((Time.deltaTime < 1) ? GetComponent<PlayerAim>().timeSlowDown : 1);
+            _actualComboTime += Time.deltaTime;// / ((Time.deltaTime < 1) ? GetComponent<PlayerAim>().timeSlowDown : 1);
             if (_actualComboTime >= timeToLoseCombo)
                 DecreaseCombo();
         }
@@ -194,7 +194,7 @@ public class Player : MonoBehaviour
         
         Instantiate(comboParticles, transform);
 
-        _camera.CameraZoomIn();
+        
         _actualComboTime = 0;
     }
 
@@ -221,8 +221,9 @@ public class Player : MonoBehaviour
     {
         AddPoints(50);
         if (_isHurt) return;
+        _camera.CameraZoomIn();
         _actualBounces++;
-        if (_actualBounces >= bouncesTillCombo)
+        if (_actualBounces % bouncesTillCombo == 0)
             AddCombo();
     }
 
