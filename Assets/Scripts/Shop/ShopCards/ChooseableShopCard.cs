@@ -3,17 +3,12 @@ using UnityEngine.UI;
 
 public class ChooseableShopCard : ShopCard
 {
-    public static ChooseableShopCard actualChoosen;
+    
     public bool isBought;
     public bool isChoosen;
     public Sprite chooseSign;
 
-    public void Start()
-    {
-        actualChoosen = shopCategoryManager.cardsParent.transform.GetChild(0).GetComponent<ChooseableShopCard>();
-        actualChoosen.Choose();
-    }
-    public void Choose()
+    public virtual void Choose()
     {
         Buy();
         if (!isBought) return;
@@ -23,9 +18,6 @@ public class ChooseableShopCard : ShopCard
         elementImage.color = new Color(actualElement.color.r, actualElement.color.g, actualElement.color.b, .01f);
         GetComponent<Button>().enabled = false;
         GetComponent<Image>().sprite = chooseSign;
-        if(actualChoosen != this)
-            actualChoosen.Unchoose();
-        actualChoosen = this;
     }
 
     public override void Buy()
@@ -38,7 +30,7 @@ public class ChooseableShopCard : ShopCard
         
     }
 
-    public void Unchoose()
+    public virtual void Unchoose()
     {
         isChoosen = false;
         elementImage.color = new Color(actualElement.color.r, actualElement.color.g, actualElement.color.b, 1);

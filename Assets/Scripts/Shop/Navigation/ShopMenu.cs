@@ -1,50 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using static Shop;
 
 public class ShopMenu : MonoBehaviour
 {
-    public ShopCategory category;
+    public static Text actualCard;
 
-    public List<GameObject> categoryCards; 
-    
-    void Start()
+    public List<Text> categoryCards;
+
+    public void Start()
     {
+        SetCategory(categoryCards[0]);
     }
 
-    void Update()
+    public void SetCategory(Text card)
     {
+        card.color = new Color(1, 1, 1, .1f);
+        if(actualCard != null)
+            UnSetCategory(actualCard);
+        actualCard = card;
     }
 
-
-    public void SetCategory(ShopCategory newCategory)
+    private void UnSetCategory(Text card)
     {
-        category = newCategory;
-        HideAllCards();
-
-        switch (category)
-        {
-            case ShopCategory.Player:
-                categoryCards[0].SetActive(true);
-                break;
-            case ShopCategory.Themes:
-                categoryCards[1].SetActive(true);
-                break;
-            case ShopCategory.Obstacles:
-                categoryCards[2].SetActive(true);
-                break;
-            case ShopCategory.PowerUps:
-                categoryCards[3].SetActive(true);
-                break;
-            default:
-                break;
-        }
+        card.color = new Color(1, 1, 1, 1);
     }
 
-    public void HideAllCards()
-    {
-        for (int i = 0; i < categoryCards.Count; i++)
-            categoryCards[i].SetActive(false);
-    }
 }

@@ -32,7 +32,7 @@ public class ShopCard : MonoBehaviour
     public void SetUpNewElement()
     {
         Shop.ShopCategory selfCategory = shopCategoryManager.category;
-        if (selfCategory == Shop.ShopCategory.Player)
-            shopCategoryManager.shop.SetNewPlayer((PlayerShopElement)actualElement);
+        if (selfCategory == Shop.ShopCategory.Skins)
+            shopCategoryManager.shop.SetNewPlayer((SkinShopElement)actualElement);
     }
 }
