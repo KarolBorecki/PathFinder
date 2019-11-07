@@ -13507,6 +13507,7 @@ MonoBehaviour:
   actualChoosenSkin: {fileID: 0}
   player: {fileID: 132658217}
   playerTrail: {fileID: 1725608186}
+  playerController: {fileID: 1725608181}
   skinsManager: {fileID: 415651690}
   playerManager: {fileID: 14026396}
   obstaclesManager: {fileID: 726058162}
@@ -13558,36 +13559,42 @@ MonoBehaviour:
     trailcolor: {r: 1, g: 1, b: 1, a: 1}
     scale: 0.7
   playerShopElements:
-  - name: Player
+  - name: Force
     category: 0
     price: 1300
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
-  - name: Player2
+    playerfeature: 0
+    multiplayer: 1.1
+    priceMultiplayer: 1.2
+  - name: Shield
     category: 0
     price: 1800
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
-  - name: Player3
+    playerfeature: 1
+    multiplayer: 1.1
+    priceMultiplayer: 1.2
+  - name: Time Slow Motion
     category: 0
     price: 2400
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
-  - name: Player4
+    playerfeature: 2
+    multiplayer: -1.1
+    priceMultiplayer: 1.2
+  - name: Energy
     category: 0
     price: 3500
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
-  - name: Player5
-    category: 0
-    price: 4600
-    level: 0
-    elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
-    color: {r: 1, g: 1, b: 1, a: 1}
+    playerfeature: 3
+    multiplayer: 1.1
+    priceMultiplayer: 1.2
   obstacleShopElements:
   - name: FirstObstacle
     category: 0

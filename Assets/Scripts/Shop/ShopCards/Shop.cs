@@ -20,6 +20,8 @@ public class Shop : MonoBehaviour
     public SpriteRenderer player;
     public TrailRenderer playerTrail;
 
+    public PlayerController playerController;
+
     public ShopCategoryManager skinsManager;
     public ShopCategoryManager playerManager;
     public ShopCategoryManager obstaclesManager;
@@ -50,10 +52,6 @@ public class Shop : MonoBehaviour
 
     }
 
-    public void SetUpShop(){
-      moneyText.SetText(10);
-    }
-
     public void SetNewPlayer(SkinShopElement newPlayer)
     {
         player.GetComponent<SpriteRenderer>().color = new Color(newPlayer.color.r, newPlayer.color.g, newPlayer.color.b);
@@ -64,5 +62,7 @@ public class Shop : MonoBehaviour
 
     public void UpgradePlayer(PlayerShopElement element){
       element.price =(int)(element.price*element.priceMultiplayer);
+      if(element.playerfeature == PlayerShopElement.PlayerFeature.Force)
+        playerController.moveForce *= element.multiplayer;
     }
 }
