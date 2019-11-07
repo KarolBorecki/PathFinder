@@ -47,6 +47,7 @@ public class GameController : MonoBehaviour
         SetGameObjects(objectsToShowOnStart, true);
         SetGameObjects(objectsToHideOnStart, false);
         player.Activate();
+        player.energy = player.maxEnergy;
         sideGenerator.StartGenerating();
         environmentGenerator.StartGenerating();
 
@@ -55,6 +56,7 @@ public class GameController : MonoBehaviour
 
     public void GameOver()
     {
+      Time.timeScale = 1.0f;
         isPlaying = false;
         SetGameObjects(objectsToShowOnStart, false);
 
@@ -109,7 +111,6 @@ public class GameController : MonoBehaviour
     public bool ShopElementBuy(int price)
     {
         if (money < price) return false;
-        Debug.Log(money<price);
         DecreaseMoney(price);
         return true;
     }

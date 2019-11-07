@@ -6,10 +6,10 @@ public class PlayerAim : MonoBehaviour
     public float timeSlowDown = 0.05f;
     public float aimLength;
 
-    public int slowDownEnergyDecrease;
+    public float slowDownEnergyDecrease = 2.5f;
 
     private Player _player;
-    
+
     private LineRenderer _line;
     private Vector2 _mouseOnClickPos;
 
@@ -24,6 +24,7 @@ public class PlayerAim : MonoBehaviour
 
     private void Update()
     {
+      if(!_player.isInGame) return;
         if (Input.GetMouseButtonDown(0))
         {
             SlowTimeDown();
@@ -34,10 +35,10 @@ public class PlayerAim : MonoBehaviour
         {
             _endPos = _mouseOnClickPos - GetMousePos();
             _endPos.y += transform.position.y - _playerOnClickPos.y;
-            
+
 //            _endPos = new Vector2(_endPos.x + aimLength* ((1 / Mathf.Abs(_endPos.x))*_endPos.x),
 //                _endPos.y + aimLength* ((1 / Mathf.Abs(_endPos.y))*_endPos.y));
-            
+
             _line.positionCount = 2;
             _line.SetPosition(0, Vector3.zero);
             _line.SetPosition(1, _endPos);

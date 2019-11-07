@@ -6449,7 +6449,7 @@ MonoBehaviour:
   pointsCounter: {fileID: 150281417}
   energy: 1500
   shield: 0
-  shieldTime: 3
+  shieldTime: 2
   shieldCamSlowDown: 0.2
   hurtTime: 1.3
   combo: 1
@@ -13505,9 +13505,11 @@ MonoBehaviour:
   gameController: {fileID: 1718873474}
   moneyText: {fileID: 552965427}
   actualChoosenSkin: {fileID: 0}
-  player: {fileID: 132658217}
+  playerSprite: {fileID: 132658217}
   playerTrail: {fileID: 1725608186}
   playerController: {fileID: 1725608181}
+  player: {fileID: 423657288}
+  energyBar: {fileID: 1539635541}
   skinsManager: {fileID: 415651690}
   playerManager: {fileID: 14026396}
   obstaclesManager: {fileID: 726058162}
@@ -13563,7 +13565,7 @@ MonoBehaviour:
     category: 0
     price: 1300
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
+    elementInShopImg: {fileID: 21300000, guid: 6b3fe1980b48f4489b1e9600b2c63c3a, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     playerfeature: 0
     multiplayer: 1.1
@@ -13577,14 +13579,14 @@ MonoBehaviour:
     playerfeature: 1
     multiplayer: 1.1
     priceMultiplayer: 1.2
-  - name: Time Slow Motion
+  - name: Aiming cost
     category: 0
     price: 2400
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     playerfeature: 2
-    multiplayer: -1.1
+    multiplayer: 0.9
     priceMultiplayer: 1.2
   - name: Energy
     category: 0
@@ -14273,6 +14275,7 @@ MonoBehaviour:
   margins: {x: 0.45, y: 1.7}
   background: {fileID: 1800248103}
   damageEffect: {fileID: 187242762}
+  energyBarLine: {fileID: 1539635542}
 --- !u!120 &1539635542
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -15502,9 +15505,9 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: bef9ebc68c2ac42b6be078c265f8b806, type: 2}
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 6
 --- !u!4 &1725608184
 Transform:

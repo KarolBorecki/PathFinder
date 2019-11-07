@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public int pointsInGame;
     public TextHandler pointsCounter;
 
-    public int energy = 1500;
+    public float energy = 1500;
     public bool shield;
     public float shieldTime;
     public float shieldCamSlowDown = .5f;
@@ -31,16 +31,16 @@ public class Player : MonoBehaviour
     public Transform shieldPrefab;
 
     public CameraMove camMove;
-    
+
     [HideInInspector]
     public bool isInGame;
 
     private CameraBehaviourHandler _camera;
 
     private float _actualShieldTime;
-    
+
     [HideInInspector]
-    public int maxEnergy;
+    public float maxEnergy;
 
     private bool _isHurt;
     private float _actualHurtTime;
@@ -114,7 +114,7 @@ public class Player : MonoBehaviour
         ResetCombo();
     }
 
-    public void DecreaseEnergy(int amount)
+    public void DecreaseEnergy(float amount)
     {
         energy -= amount;
 
@@ -128,7 +128,7 @@ public class Player : MonoBehaviour
     {
         isInGame = true;
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-        
+
         GetComponent<TrailRenderer>().enabled = true;
     }
 
@@ -138,18 +138,18 @@ public class Player : MonoBehaviour
 
         SetIsHurt(false);
         DeactivateShield();
-        
+
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-        
+
         energy = maxEnergy;
-        
+
         pointsInGame = 0;
         pointsCounter.SetText(pointsInGame);
-        
+
         ResetCombo();
 
         camMove.Reset();
-        
+
         GetComponent<TrailRenderer>().enabled = false;
 
         transform.position = startPos;
@@ -162,7 +162,7 @@ public class Player : MonoBehaviour
         _actualShieldTime = 0;
         camMove.cameraSpeed *= shieldCamSlowDown;
         SetIsHurt(false);
-        
+
         AddPoints(150);
     }
 
@@ -180,7 +180,7 @@ public class Player : MonoBehaviour
         energy += amount;
         if (energy > maxEnergy) energy = maxEnergy;
         SetIsHurt(false);
-        
+
         AddPoints(80);
     }
 
@@ -191,10 +191,10 @@ public class Player : MonoBehaviour
             combo++;
             comboHandler.SetTextAsCombo(combo);
         }
-        
+
         Instantiate(comboParticles, transform);
 
-        
+
         _actualComboTime = 0;
     }
 

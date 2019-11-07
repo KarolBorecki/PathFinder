@@ -8,7 +8,7 @@ public class PlayerShopElement : ShopElement
   public enum PlayerFeature{
     Force,
     Shield,
-    TimeSlowMotion,
+    AimingCost,
     EnergyAmount
   }
   public PlayerFeature playerfeature;
