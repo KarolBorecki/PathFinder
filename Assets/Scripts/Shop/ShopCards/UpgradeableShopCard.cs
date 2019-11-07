@@ -27,4 +27,8 @@ public class UpgradeableShopCard : ShopCard
             --level;
         }
     }
+
+    public virtual void Upgrade(){
+
+    }
 }

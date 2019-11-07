@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class ShopCard : MonoBehaviour
 {
-    public ShopCategoryManager shopCategoryManager; 
-    
+    public ShopCategoryManager shopCategoryManager;
+
     public ShopElement actualElement;
     public Image elementImage;
     public Text priceTag;
@@ -17,7 +17,12 @@ public class ShopCard : MonoBehaviour
         actualElement = newElement;
         elementImage.sprite = newElement.elementInShopImg;
         elementImage.color = newElement.color;
-        priceTag.text = newElement.price + "$"; 
+        SetPriceTag(newElement.price);
+    }
+
+    public void SetPriceTag(int price = -10){
+      if(price == -10) price = actualElement.price;
+      priceTag.text = price + "$";
     }
 
     public virtual void Buy()
@@ -34,5 +39,7 @@ public class ShopCard : MonoBehaviour
         Shop.ShopCategory selfCategory = shopCategoryManager.category;
         if (selfCategory == Shop.ShopCategory.Skins)
             shopCategoryManager.shop.SetNewPlayer((SkinShopElement)actualElement);
+        else if(selfCategory == Shop.ShopCategory.Player)
+            shopCategoryManager.shop.UpgradePlayer((PlayerShopElement)actualElement);
     }
 }

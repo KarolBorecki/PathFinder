@@ -50,11 +50,19 @@ public class Shop : MonoBehaviour
 
     }
 
+    public void SetUpShop(){
+      moneyText.SetText(10);
+    }
+
     public void SetNewPlayer(SkinShopElement newPlayer)
     {
         player.GetComponent<SpriteRenderer>().color = new Color(newPlayer.color.r, newPlayer.color.g, newPlayer.color.b);
         playerTrail.startColor = new Color(newPlayer.color.r, newPlayer.color.g, newPlayer.color.b);
         playerTrail.endColor = new Color(newPlayer.color.r, newPlayer.color.g, newPlayer.color.b, 0);
         player.sprite = newPlayer.newPlayerLook;
+    }
+
+    public void UpgradePlayer(PlayerShopElement element){
+      element.price =(int)(element.price*element.priceMultiplayer);
     }
 }
