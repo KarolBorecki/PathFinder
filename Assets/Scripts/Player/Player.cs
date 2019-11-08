@@ -127,6 +127,7 @@ public class Player : MonoBehaviour
     public void Activate()
     {
         isInGame = true;
+        GetComponent<Animator>().SetBool("IsPlaying", true);
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
 
         GetComponent<TrailRenderer>().enabled = true;
@@ -135,6 +136,7 @@ public class Player : MonoBehaviour
     public void Reset()
     {
         isInGame = false;
+        GetComponent<Animator>().SetBool("IsPlaying", false);
 
         SetIsHurt(false);
         DeactivateShield();
