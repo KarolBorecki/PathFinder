@@ -16,9 +16,9 @@ public class ShopMenu : MonoBehaviour
 
     public void SetCategory(Text card)
     {
-        card.color = new Color(1, 1, 1, .1f);
         if(actualCard != null)
             UnSetCategory(actualCard);
+        card.color = new Color(1, 1, 1, .1f);
         actualCard = card;
     }
 

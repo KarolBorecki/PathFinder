@@ -8,16 +8,17 @@ public class SkinCard : ChooseableShopCard
 
     void Start()
     {
-        actualChoosen = shopCategoryManager.cardsParent.transform.GetChild(0).GetComponent<ChooseableShopCard>();
-        actualChoosen.Choose();
+        SkinCard.actualChoosen = shopCategoryManager.cardsParent.transform.GetChild(0).GetComponent<ChooseableShopCard>();
+        SkinCard.actualChoosen.Choose();
     }
 
     public override void Choose()
     {
+      Debug.Log(actualChoosen.actualElement.name);
+        if(isChoosen) return;
         base.Choose();
-
-        if (actualChoosen != this)
-            actualChoosen.Unchoose();
-        actualChoosen = this;
+        if (SkinCard.actualChoosen != this && isBought)
+            SkinCard.actualChoosen.Unchoose();
+        SkinCard.actualChoosen = this;
     }
 }

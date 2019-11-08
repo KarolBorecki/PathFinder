@@ -13317,7 +13317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sizeToExpand: 1
   eachChildrenPartSize:
-  - 0.1
+  - 0.08
   childrenToExpand:
   - {fileID: 1096738623}
 --- !u!114 &1096738628
@@ -13334,7 +13334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sizeToExpand: 0
   eachChildrenPartSize:
-  - 0.17
+  - 0.136
   childrenToExpand:
   - {fileID: 1096738623}
 --- !u!1 &1170568385
@@ -13565,7 +13565,7 @@ MonoBehaviour:
     category: 0
     price: 1300
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 6b3fe1980b48f4489b1e9600b2c63c3a, type: 3}
+    elementInShopImg: {fileID: 21300000, guid: e7752b1c00dc741eca9c3962f6f60bc5, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     playerfeature: 0
     multiplayer: 1.1
@@ -13574,7 +13574,7 @@ MonoBehaviour:
     category: 0
     price: 1800
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
+    elementInShopImg: {fileID: 21300000, guid: 5757a4d36cdd942af8644ab895dc5deb, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     playerfeature: 1
     multiplayer: 1.1
@@ -13583,7 +13583,7 @@ MonoBehaviour:
     category: 0
     price: 2400
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
+    elementInShopImg: {fileID: 21300000, guid: 16741ba8505cb4647a3ec1bbe40e70ce, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     playerfeature: 2
     multiplayer: 0.9
@@ -13592,7 +13592,7 @@ MonoBehaviour:
     category: 0
     price: 3500
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
+    elementInShopImg: {fileID: 21300000, guid: 3a3b02db2faf74992b06c937cbb39982, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     playerfeature: 3
     multiplayer: 1.1
@@ -15399,7 +15399,7 @@ MonoBehaviour:
   player: {fileID: 423657288}
   sideGenerator: {fileID: 1708162807}
   environmentGenerator: {fileID: 1708162808}
-  money: 100000
+  money: 0
   moneyCounter: {fileID: 623130311}
   shopMoneyCounter: {fileID: 552965427}
   energyBar: {fileID: 1539635541}
@@ -15487,7 +15487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeSlowDown: 0.05
   aimLength: 2
-  slowDownEnergyDecrease: 1
+  slowDownEnergyDecrease: 5
 --- !u!50 &1725608183
 Rigidbody2D:
   serializedVersion: 4

@@ -62,7 +62,7 @@ public class GameController : MonoBehaviour
 
         deadPanel.SetActive(true);
         _isDeadPanelActive = true;
-        Invoke("MakeContinueAble", .6f);
+        Invoke("MakeContinueAble", .4f);
 
         sideGenerator.StopGenerating();
     }
