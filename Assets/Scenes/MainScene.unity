@@ -13144,9 +13144,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameController: {fileID: 1718873474}
   player: {fileID: 1725608184}
-  smoothSpeed: 0.125
+  smoothSpeed: 0.04
   cameraOffset: {x: 0, y: 1.8, z: 0}
-  cameraSpeed: 5
+  cameraSpeed: 1
+  speedingUp: 0.07
 --- !u!4 &1085077406
 Transform:
   m_ObjectHideFlags: 0
@@ -15472,7 +15473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc6c7644f2fa744b3985bbb93985f360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 1000
+  moveForce: 800
 --- !u!114 &1725608182
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -41,7 +41,7 @@ public class EnergyBar : MonoBehaviour
     {
         damageEffect.gameObject.SetActive(true);
         SetColorOfDamageViniette(new Color(damageEffect.color.r, damageEffect.color.g, damageEffect.color.b,
-            1f - (float)player.energy / player.maxEnergy));
+            .8f - (float)player.energy / player.maxEnergy));
     }
 
     private void SetColorOfDamageViniette(Color color)
