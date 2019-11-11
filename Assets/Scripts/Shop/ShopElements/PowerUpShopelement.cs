@@ -5,6 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class PowerUpShopelement : ShopElement
 {
-    public Transform powerUpPrefab;
+    public PowerUp powerUpPrefab;
     public Sprite spriteAfterBuying;
+
+    public float multiplayer = 1.1f;
+    public float priceMultiplayer = 1.2f;
 }

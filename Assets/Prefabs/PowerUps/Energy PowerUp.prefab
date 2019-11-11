@@ -127,10 +127,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4373231460051684762}
   - component: {fileID: 4373231460051684765}
-  - component: {fileID: 1776606195365046412}
+  - component: {fileID: -7746180331696837801}
   - component: {fileID: 4373231460051684764}
   - component: {fileID: -2251789026568517421}
   - component: {fileID: 8137846611429610788}
+  - component: {fileID: 1365984494261701615}
   m_Layer: 0
   m_Name: Energy PowerUp
   m_TagString: EnergyPowerUp
@@ -181,7 +182,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.66, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1776606195365046412
+--- !u!114 &-7746180331696837801
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -193,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b8f9c7f7dd6457d8ab4167f5283432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energy: 600
+  number: 300
 --- !u!114 &4373231460051684764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +241,27 @@ MonoBehaviour:
   particleEffect: {fileID: 3497174521365569235, guid: c0243307b103e4fd5812b80a9d9bf85d,
     type: 3}
   color: {r: 0, g: 0.3691721, b: 1, a: 1}
+--- !u!50 &1365984494261701615
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4373231460051684767}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4373231460107736217
 GameObject:
   m_ObjectHideFlags: 0

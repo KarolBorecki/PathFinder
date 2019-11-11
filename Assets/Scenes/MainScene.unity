@@ -5632,8 +5632,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6999999, y: 0.6999999, z: 0.7}
-  m_Children:
-  - {fileID: 925520496}
+  m_Children: []
   m_Father: {fileID: 679393162}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12967,53 +12966,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &925520495
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 925520496}
-  - component: {fileID: 925520497}
-  m_Layer: 8
-  m_Name: Collision
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &925520496
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925520495}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.0408168, y: 2.0408168, z: 1.4285713}
-  m_Children: []
-  m_Father: {fileID: 132658215}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &925520497
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925520495}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.23
 --- !u!1 &1075344711
 GameObject:
   m_ObjectHideFlags: 0
@@ -13645,30 +13597,36 @@ MonoBehaviour:
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
-    powerUpPrefab: {fileID: 4373231460051684762, guid: dcd36dc8d12314a1f9906640e93d9f2c,
+    powerUpPrefab: {fileID: -7746180331696837801, guid: dcd36dc8d12314a1f9906640e93d9f2c,
       type: 3}
     spriteAfterBuying: {fileID: 21300000, guid: 1ab7faabb91804c41828d27e6c2e58f4,
       type: 3}
+    multiplayer: 1.1
+    priceMultiplayer: 1.2
   - name: FirstPowerUp
     category: 0
     price: 124
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
-    powerUpPrefab: {fileID: 2889510188339144631, guid: 87049396c28e64dad85ff46d7ec7da6d,
+    powerUpPrefab: {fileID: 4238404927643045956, guid: 87049396c28e64dad85ff46d7ec7da6d,
       type: 3}
     spriteAfterBuying: {fileID: 21300000, guid: 7f33e5a71daab4ba18a19478a4e45fc4,
       type: 3}
+    multiplayer: 1.1
+    priceMultiplayer: 1.2
   - name: FirstPowerUp
     category: 0
     price: 568
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
-    powerUpPrefab: {fileID: 2889510188339144631, guid: 87049396c28e64dad85ff46d7ec7da6d,
+    powerUpPrefab: {fileID: 4238404927643045956, guid: 87049396c28e64dad85ff46d7ec7da6d,
       type: 3}
     spriteAfterBuying: {fileID: 21300000, guid: 7f33e5a71daab4ba18a19478a4e45fc4,
       type: 3}
+    multiplayer: 1.1
+    priceMultiplayer: 1.2
 --- !u!1 &1307358907
 GameObject:
   m_ObjectHideFlags: 0
@@ -15264,8 +15222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxXPosition: {x: -2, y: 2}
   elementsMargin: {x: 5, y: 15}
-  environmentElements:
-  - {fileID: 4373231460051684762, guid: dcd36dc8d12314a1f9906640e93d9f2c, type: 3}
+  environmentElements: []
   elementsParent: {fileID: 703777995}
 --- !u!114 &1708162809
 MonoBehaviour:
@@ -15487,6 +15444,7 @@ GameObject:
   - component: {fileID: 1725608181}
   - component: {fileID: 423657288}
   - component: {fileID: 1725608187}
+  - component: {fileID: 1725608188}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -15787,6 +15745,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &1725608188
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725608180}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.49999997
 --- !u!1 &1769525792
 GameObject:
   m_ObjectHideFlags: 0

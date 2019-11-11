@@ -5,7 +5,7 @@ public class EnvironmentGenerator : MonoBehaviour
 {
     public Vector2 maxXPosition;
     public Vector2 elementsMargin;
-    public List<Transform> environmentElements;
+    public List<PowerUp> environmentElements;
     public Transform elementsParent;
 
     private float _lastOne;
@@ -25,14 +25,15 @@ public class EnvironmentGenerator : MonoBehaviour
 
     private void Spawn()
     {
-        Transform e = Instantiate(GetRandomFromList(environmentElements), elementsParent);
-        e.position = new Vector3(Random.Range(maxXPosition.x, maxXPosition.y), transform.position.y + elementsMargin.y,
+      if(!(environmentElements.Count>0)) return;
+        PowerUp e = Instantiate(environmentElements[Random.Range(0, environmentElements.Count)], elementsParent);
+        e.transform.position = new Vector3(Random.Range(maxXPosition.x, maxXPosition.y), transform.position.y + elementsMargin.y,
             0);
-        _lastOne = e.position.y;
+        _lastOne = e.transform.position.y;
         _actualMargin = Random.Range(elementsMargin.x, elementsMargin.y);
     }
 
-    public void AddNewPowerUp(Transform powerUp){
+    public void AddNewPowerUp(PowerUp powerUp){
         environmentElements.Add(powerUp);
     }
 

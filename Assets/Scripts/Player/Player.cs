@@ -177,7 +177,7 @@ public class Player : MonoBehaviour
         camMove.cameraSpeed /= shieldCamSlowDown;
     }
 
-    private void AddEnergy(int amount)
+    public void AddEnergy(int amount)
     {
         energy += amount;
         if (energy > maxEnergy) energy = maxEnergy;
@@ -256,14 +256,6 @@ public class Player : MonoBehaviour
             Dead();
         else
             SafeBounce();
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (!other.gameObject.CompareTag("EnergyPowerUp")) return;
-
-        AddEnergy(other.gameObject.GetComponent<EnergyPowerUp>().energy);
-        other.gameObject.GetComponent<DestroyAfterTime>().DestroyItSelf();
     }
 
     //public void SetPlayerLook(Sprite newSprite, Color newColor)
