@@ -81,6 +81,7 @@ public class Shop : MonoBehaviour
 
     public Sprite UpgradePowerUp(PowerUpShopelement powerUp){
         powerUp.price =(int)(powerUp.price*powerUp.priceMultiplayer);
+        powerUp.powerUpPrefab.number = (int)(powerUp.powerUpPrefab.number*powerUp.multiplayer);
         if(powerUp.level==1)
           enviromentGenerator.AddNewPowerUp(powerUp.powerUpPrefab);
         return powerUp.spriteAfterBuying;
