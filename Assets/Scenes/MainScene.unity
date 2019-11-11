@@ -13531,6 +13531,7 @@ MonoBehaviour:
   playerController: {fileID: 1725608181}
   player: {fileID: 423657288}
   energyBar: {fileID: 1539635541}
+  enviromentGenerator: {fileID: 1708162808}
   skinsManager: {fileID: 415651690}
   playerManager: {fileID: 14026396}
   obstaclesManager: {fileID: 726058162}
@@ -13646,7 +13647,7 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     powerUpPrefab: {fileID: 4373231460051684762, guid: dcd36dc8d12314a1f9906640e93d9f2c,
       type: 3}
-    spriteAfterBuying: {fileID: 21300000, guid: 08dde94011d1d4ef589c7f77fb5761b5,
+    spriteAfterBuying: {fileID: 21300000, guid: 1ab7faabb91804c41828d27e6c2e58f4,
       type: 3}
   - name: FirstPowerUp
     category: 0
@@ -13654,8 +13655,9 @@ MonoBehaviour:
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
-    powerUpPrefab: {fileID: 0}
-    spriteAfterBuying: {fileID: 21300000, guid: 08dde94011d1d4ef589c7f77fb5761b5,
+    powerUpPrefab: {fileID: 2889510188339144631, guid: 87049396c28e64dad85ff46d7ec7da6d,
+      type: 3}
+    spriteAfterBuying: {fileID: 21300000, guid: 7f33e5a71daab4ba18a19478a4e45fc4,
       type: 3}
   - name: FirstPowerUp
     category: 0
@@ -13663,8 +13665,9 @@ MonoBehaviour:
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
-    powerUpPrefab: {fileID: 0}
-    spriteAfterBuying: {fileID: 21300000, guid: 08dde94011d1d4ef589c7f77fb5761b5,
+    powerUpPrefab: {fileID: 2889510188339144631, guid: 87049396c28e64dad85ff46d7ec7da6d,
+      type: 3}
+    spriteAfterBuying: {fileID: 21300000, guid: 7f33e5a71daab4ba18a19478a4e45fc4,
       type: 3}
 --- !u!1 &1307358907
 GameObject:

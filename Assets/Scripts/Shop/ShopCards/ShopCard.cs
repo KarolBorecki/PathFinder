@@ -36,6 +36,7 @@ public class ShopCard : MonoBehaviour
 
     public void SetUpNewElement()
     {
+      Debug.Log("AFAW");
         Shop.ShopCategory selfCategory = shopCategoryManager.category;
         if (selfCategory == Shop.ShopCategory.Skins)
             shopCategoryManager.shop.SetNewPlayer((SkinShopElement)actualElement);

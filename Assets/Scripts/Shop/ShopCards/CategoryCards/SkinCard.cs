@@ -14,7 +14,6 @@ public class SkinCard : ChooseableShopCard
 
     public override void Choose()
     {
-      Debug.Log(actualChoosen.actualElement.name);
         if(isChoosen) return;
         base.Choose();
         if (SkinCard.actualChoosen != this && isBought)

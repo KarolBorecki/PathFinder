@@ -11,16 +11,12 @@ public class EnvironmentGenerator : MonoBehaviour
     private float _lastOne;
     private float _actualMargin;
 
-    private void Start()
-    {
-    }
-
     private void Update()
     {
         if (_lastOne + _actualMargin<= transform.position.y)
             Spawn();
     }
-    
+
     public void StartGenerating()
     {
         ClearEnvironment();
@@ -36,10 +32,14 @@ public class EnvironmentGenerator : MonoBehaviour
         _actualMargin = Random.Range(elementsMargin.x, elementsMargin.y);
     }
 
+    public void AddNewPowerUp(Transform powerUp){
+        environmentElements.Add(powerUp);
+    }
+
     private void ClearEnvironment()
     {
         for (int i = 0; i < elementsParent.childCount; i++)
-            Destroy(elementsParent.GetChild(i).gameObject);    
+            Destroy(elementsParent.GetChild(i).gameObject);
     }
 
     private Transform GetRandomFromList(List<Transform> list)

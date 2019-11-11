@@ -13,7 +13,7 @@ public class PowerUpsCard : UpgradeableShopCard
 
   public override void Upgrade(){
     base.Upgrade();
-    base.SetUpNewElement();
+    //base.SetUpNewElement();
     SetPriceTag();
   }
 }

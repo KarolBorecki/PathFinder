@@ -24,6 +24,8 @@ public class Shop : MonoBehaviour
     public Player player;
     public EnergyBar energyBar;
 
+    public EnvironmentGenerator enviromentGenerator;
+
     public ShopCategoryManager skinsManager;
     public ShopCategoryManager playerManager;
     public ShopCategoryManager obstaclesManager;
@@ -78,6 +80,8 @@ public class Shop : MonoBehaviour
     }
 
     public Sprite UpgradePowerUp(PowerUpShopelement powerUp){
+        if(powerUp.level==1)
+          enviromentGenerator.AddNewPowerUp(powerUp.powerUpPrefab);
         return powerUp.spriteAfterBuying;
     }
 }
