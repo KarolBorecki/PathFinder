@@ -12,7 +12,7 @@ public class SideElement : MonoBehaviour
 
     void Start()
     {
-        float width = Camera.main.orthographicSize * Screen.width / Screen.height;
+        float width = 5 * Screen.width / Screen.height;
         transform.eulerAngles = new Vector3(0, side == Responsivity.Side.Right ? 0 : 180, 0);
         transform.localScale = new Vector3(width * scale, width * scale, width * scale);
         gameObject.GetComponent<Responsivity>().SetPosition(0, side);

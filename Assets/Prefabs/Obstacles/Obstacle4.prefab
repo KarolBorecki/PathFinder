@@ -363,7 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   side: 1
-  scale: 0.35
+  scale: 0.45
   objReference: {fileID: 0}
   index: 0
 --- !u!114 &1939272064662036587
