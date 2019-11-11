@@ -5467,6 +5467,7 @@ GameObject:
   - component: {fileID: 113368543}
   - component: {fileID: 113368542}
   - component: {fileID: 113368545}
+  - component: {fileID: 113368546}
   m_Layer: 5
   m_Name: DeadPanel
   m_TagString: Untagged
@@ -5584,6 +5585,25 @@ MonoBehaviour:
   - {fileID: 1971990636}
   - {fileID: 146239291}
   - {fileID: 199138710}
+--- !u!114 &113368546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113368540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4370880bf9aa14e4780c2067e56269a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeToExpand: 0
+  eachChildrenPartSize:
+  - 0.8
+  - 0.8
+  childrenToExpand:
+  - {fileID: 1589192092}
+  - {fileID: 146239291}
 --- !u!1 &132658214
 GameObject:
   m_ObjectHideFlags: 0
@@ -6054,7 +6074,7 @@ GameObject:
   - component: {fileID: 199138712}
   - component: {fileID: 199138711}
   m_Layer: 5
-  m_Name: Empty Space (1)
+  m_Name: Empty Space
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12784,7 +12804,7 @@ GameObject:
   - component: {fileID: 808920902}
   - component: {fileID: 808920901}
   m_Layer: 5
-  m_Name: Empty Space (2)
+  m_Name: Empty Space
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13624,18 +13644,28 @@ MonoBehaviour:
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
+    powerUpPrefab: {fileID: 4373231460051684762, guid: dcd36dc8d12314a1f9906640e93d9f2c,
+      type: 3}
+    spriteAfterBuying: {fileID: 21300000, guid: 08dde94011d1d4ef589c7f77fb5761b5,
+      type: 3}
   - name: FirstPowerUp
     category: 0
     price: 124
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
+    powerUpPrefab: {fileID: 0}
+    spriteAfterBuying: {fileID: 21300000, guid: 08dde94011d1d4ef589c7f77fb5761b5,
+      type: 3}
   - name: FirstPowerUp
     category: 0
     price: 568
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
+    powerUpPrefab: {fileID: 0}
+    spriteAfterBuying: {fileID: 21300000, guid: 08dde94011d1d4ef589c7f77fb5761b5,
+      type: 3}
 --- !u!1 &1307358907
 GameObject:
   m_ObjectHideFlags: 0
@@ -14407,7 +14437,7 @@ MonoBehaviour:
   shop: {fileID: 1178668165}
   category: 3
   elements: []
-  shopCard: {fileID: 6243529624869150630, guid: e0e9e319ebe0849cfbd0c26220fade4f,
+  shopCard: {fileID: 8006121671730308436, guid: 02148d9dcc54b4a8a948a3bc06ffb9da,
     type: 3}
   cardsParent: {fileID: 1769525793}
 --- !u!114 &1581277567
@@ -15230,7 +15260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxXPosition: {x: -2, y: 2}
-  elementsMargin: {x: 5, y: 10}
+  elementsMargin: {x: 5, y: 15}
   environmentElements:
   - {fileID: 4373231460051684762, guid: dcd36dc8d12314a1f9906640e93d9f2c, type: 3}
   elementsParent: {fileID: 703777995}
@@ -15400,7 +15430,7 @@ MonoBehaviour:
   player: {fileID: 423657288}
   sideGenerator: {fileID: 1708162807}
   environmentGenerator: {fileID: 1708162808}
-  money: 0
+  money: 100000
   moneyCounter: {fileID: 623130311}
   shopMoneyCounter: {fileID: 552965427}
   energyBar: {fileID: 1539635541}

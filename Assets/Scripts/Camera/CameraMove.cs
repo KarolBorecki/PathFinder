@@ -13,7 +13,8 @@ public class CameraMove : MonoBehaviour
     public float cameraSpeed = 2f;
     public float speedingUp = .05f;
 
-    private float actualSpeed;
+    private float _actualSpeed;
+    private float _heightSpeed;
 
     private void Start()
     {
@@ -24,9 +25,9 @@ public class CameraMove : MonoBehaviour
     private void Update()
     {
         if(!gameController.isPlaying) return;
-        transform.Translate(0, actualSpeed*Time.deltaTime, 0);
-        actualSpeed += speedingUp * Time.deltaTime;
-        Debug.Log(actualSpeed);
+        _heightSpeed = 1;
+        transform.Translate(0, _actualSpeed*Time.deltaTime, 0);
+        _actualSpeed += speedingUp * Time.deltaTime * _heightSpeed;
     }
 
     private void FixedUpdate()
@@ -42,6 +43,6 @@ public class CameraMove : MonoBehaviour
     public void Reset()
     {
         transform.position = Vector3.zero;
-        actualSpeed = cameraSpeed;
+        _actualSpeed = cameraSpeed;
     }
 }

@@ -76,4 +76,8 @@ public class Shop : MonoBehaviour
         energyBar.Setup();
       }
     }
+
+    public Sprite UpgradePowerUp(PowerUpShopelement powerUp){
+        return powerUp.spriteAfterBuying;
+    }
 }
