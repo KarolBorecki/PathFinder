@@ -142,6 +142,9 @@ public class Player : MonoBehaviour
         DeactivateShield();
 
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+        GetComponent<PlayerAim>().ClearLine();
+        
+        transform.GetChild(0).localScale = new Vector3(.9f, .9f, 1);
 
         energy = maxEnergy;
 

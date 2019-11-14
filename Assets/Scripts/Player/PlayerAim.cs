@@ -62,4 +62,9 @@ public class PlayerAim : MonoBehaviour
         Time.timeScale = timeSlowDown;
         Time.fixedDeltaTime = Time.timeScale * timeSlowDown;
     }
+
+    public void ClearLine()
+    {
+        _line.positionCount = 0;
+    }
 }

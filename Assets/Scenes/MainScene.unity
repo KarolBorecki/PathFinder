@@ -12531,7 +12531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bias: 1
-  strength: 0.015
+  strength: 0.03
   rigidbody: {fileID: 1725608183}
 --- !u!114 &679393164
 MonoBehaviour:
@@ -13578,18 +13578,21 @@ MonoBehaviour:
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
+    obstacles: []
   - name: FirstObstacle
     category: 0
     price: 12412
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
+    obstacles: []
   - name: FirstObstacle
     category: 0
     price: 12412
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
+    obstacles: []
   powerUpShopElements:
   - name: FirstPowerUp
     category: 0
@@ -15464,7 +15467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc6c7644f2fa744b3985bbb93985f360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 800
+  moveForce: 300
 --- !u!114 &1725608182
 MonoBehaviour:
   m_ObjectHideFlags: 0
