@@ -44,6 +44,8 @@ public class ShopCard : MonoBehaviour
             shopCategoryManager.shop.UpgradePlayer((PlayerShopElement)actualElement);
         else if(selfCategory == Shop.ShopCategory.PowerUps)
             elementImage.sprite = shopCategoryManager.shop.UpgradePowerUp((PowerUpShopelement)actualElement);
+        else if(selfCategory == Shop.ShopCategory.Obstacles)
+            shopCategoryManager.shop.AddObstacles((ObstacleShopElement)actualElement);
 
     }
 }

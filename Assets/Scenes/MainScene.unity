@@ -12611,7 +12611,7 @@ MonoBehaviour:
   shop: {fileID: 1178668165}
   category: 2
   elements: []
-  shopCard: {fileID: 4399281441686518801, guid: e73354f4c80b64b8c8799d91e872cb9f,
+  shopCard: {fileID: 7413554855243249606, guid: fb4fd1ee496044e8e9f6f2b9324f223e,
     type: 3}
   cardsParent: {fileID: 515775816}
 --- !u!114 &726058163
@@ -13484,6 +13484,7 @@ MonoBehaviour:
   player: {fileID: 423657288}
   energyBar: {fileID: 1539635541}
   enviromentGenerator: {fileID: 1708162808}
+  sideGenerator: {fileID: 1708162807}
   skinsManager: {fileID: 415651690}
   playerManager: {fileID: 14026396}
   obstaclesManager: {fileID: 726058162}
@@ -13578,21 +13579,27 @@ MonoBehaviour:
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
-    obstacles: []
+    obstacles:
+    - {fileID: 1736082216200096600, guid: c31308c18323c4840b942cc2ef924dc1, type: 3}
+    - {fileID: 2201834013218187551, guid: 2debe5dac4e4d4fdb9199f974668981d, type: 3}
+    - {fileID: 3679927822007515907, guid: 38d0905b15bcc4276a1fec97c8edb3b6, type: 3}
   - name: FirstObstacle
     category: 0
     price: 12412
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
-    obstacles: []
+    obstacles:
+    - {fileID: 2376543795320679189, guid: a413ae02b1b9144a4b9188fa02c06a39, type: 3}
+    - {fileID: 3930490032047596776, guid: 21fa72ccf9bf14307aca85c390f78451, type: 3}
   - name: FirstObstacle
     category: 0
     price: 12412
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
-    obstacles: []
+    obstacles:
+    - {fileID: 7672041122249657930, guid: 4436d018f2d5546bc923f6094e701913, type: 3}
   powerUpShopElements:
   - name: FirstPowerUp
     category: 0
@@ -15203,14 +15210,7 @@ MonoBehaviour:
   elementsParent: {fileID: 318973996}
   distance: {x: 5, y: 7}
   elements:
-  - {fileID: 3679927822007515907, guid: 38d0905b15bcc4276a1fec97c8edb3b6, type: 3}
-  - {fileID: 1736082216200096600, guid: c31308c18323c4840b942cc2ef924dc1, type: 3}
-  - {fileID: 2376543795320679189, guid: a413ae02b1b9144a4b9188fa02c06a39, type: 3}
-  - {fileID: 7672041122249657930, guid: 4436d018f2d5546bc923f6094e701913, type: 3}
   - {fileID: 3657910656338094281, guid: a5c3168be3ad34722995b8565710fa5f, type: 3}
-  - {fileID: 3278608402694421208, guid: 3ba3e3fd633f641649e4a5d4eb9d512a, type: 3}
-  - {fileID: 2201834013218187551, guid: 2debe5dac4e4d4fdb9199f974668981d, type: 3}
-  - {fileID: 3930490032047596776, guid: 21fa72ccf9bf14307aca85c390f78451, type: 3}
 --- !u!114 &1708162808
 MonoBehaviour:
   m_ObjectHideFlags: 0
