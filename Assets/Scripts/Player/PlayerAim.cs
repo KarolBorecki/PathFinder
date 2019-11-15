@@ -65,6 +65,7 @@ public class PlayerAim : MonoBehaviour
 
     public void ClearLine()
     {
-        _line.positionCount = 0;
+        if(_line != null)
+            _line.positionCount = 0;
     }
 }

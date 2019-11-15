@@ -5632,7 +5632,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6999999, y: 0.6999999, z: 0.7}
-  m_Children: []
+  m_Children:
+  - {fileID: 633704637}
   m_Father: {fileID: 679393162}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5686,7 +5687,7 @@ SpriteRenderer:
   m_SortingLayerID: 1607853581
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5694,7 +5695,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &146239290
@@ -12182,6 +12183,86 @@ MonoBehaviour:
   textNumber: 0
   textBefore: $
   handledText: {fileID: 623130309}
+--- !u!1 &633704636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 633704637}
+  - component: {fileID: 633704638}
+  m_Layer: 0
+  m_Name: beach-ball
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &633704637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633704636}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 132658215}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &633704638
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633704636}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1607853581
+  m_SortingLayer: 6
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.12, y: 5.12}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &657886139
 GameObject:
   m_ObjectHideFlags: 0
@@ -13478,7 +13559,7 @@ MonoBehaviour:
   gameController: {fileID: 1718873474}
   moneyText: {fileID: 552965427}
   actualChoosenSkin: {fileID: 0}
-  playerSprite: {fileID: 132658217}
+  playerSprite: {fileID: 633704638}
   playerTrail: {fileID: 1725608186}
   playerController: {fileID: 1725608181}
   player: {fileID: 423657288}
@@ -13535,12 +13616,21 @@ MonoBehaviour:
     newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
     trailcolor: {r: 1, g: 1, b: 1, a: 1}
     scale: 0.7
+  - name: BeachBall
+    category: 0
+    price: 10000
+    level: 0
+    elementInShopImg: {fileID: 21300000, guid: 844bc6d52043d43ae828781e397f2072, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    newPlayerLook: {fileID: 21300000, guid: 844bc6d52043d43ae828781e397f2072, type: 3}
+    trailcolor: {r: 0.37058055, g: 1, b: 0, a: 1}
+    scale: 0.2
   playerShopElements:
   - name: Force
     category: 0
     price: 1300
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: e7752b1c00dc741eca9c3962f6f60bc5, type: 3}
+    elementInShopImg: {fileID: 21300000, guid: e94e62292c44d452db657e38c98fbad5, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     playerfeature: 0
     multiplayer: 1.1
@@ -13549,7 +13639,7 @@ MonoBehaviour:
     category: 0
     price: 1800
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 5757a4d36cdd942af8644ab895dc5deb, type: 3}
+    elementInShopImg: {fileID: 21300000, guid: 719e1d67831124bacaf2fd02718ee2d3, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     playerfeature: 1
     multiplayer: 1.1
@@ -13558,7 +13648,7 @@ MonoBehaviour:
     category: 0
     price: 2400
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 16741ba8505cb4647a3ec1bbe40e70ce, type: 3}
+    elementInShopImg: {fileID: 21300000, guid: 521180b0e20314049afd6c2335226d62, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     playerfeature: 2
     multiplayer: 0.9
@@ -13567,39 +13657,50 @@ MonoBehaviour:
     category: 0
     price: 3500
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 3a3b02db2faf74992b06c937cbb39982, type: 3}
+    elementInShopImg: {fileID: 21300000, guid: 076e3d6b9113b44558d7f8c609ef9b57, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     playerfeature: 3
     multiplayer: 1.1
     priceMultiplayer: 1.2
   obstacleShopElements:
-  - name: FirstObstacle
+  - name: Collection1
     category: 0
-    price: 12412
+    price: 10000
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
+    elementInShopImg: {fileID: 21300000, guid: 076a05d473fea431dba5da67276cd886, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     obstacles:
     - {fileID: 1736082216200096600, guid: c31308c18323c4840b942cc2ef924dc1, type: 3}
-    - {fileID: 2201834013218187551, guid: 2debe5dac4e4d4fdb9199f974668981d, type: 3}
+    - {fileID: 3278608402694421208, guid: 3ba3e3fd633f641649e4a5d4eb9d512a, type: 3}
     - {fileID: 3679927822007515907, guid: 38d0905b15bcc4276a1fec97c8edb3b6, type: 3}
-  - name: FirstObstacle
+  - name: Collection2
     category: 0
-    price: 12412
+    price: 20000
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
+    elementInShopImg: {fileID: 21300000, guid: 92deb278dcdff425fb95a46fcf7c2fe1, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     obstacles:
     - {fileID: 2376543795320679189, guid: a413ae02b1b9144a4b9188fa02c06a39, type: 3}
+    - {fileID: 2201834013218187551, guid: 2debe5dac4e4d4fdb9199f974668981d, type: 3}
     - {fileID: 3930490032047596776, guid: 21fa72ccf9bf14307aca85c390f78451, type: 3}
-  - name: FirstObstacle
+  - name: Collection3
     category: 0
-    price: 12412
+    price: 30000
     level: 0
-    elementInShopImg: {fileID: 21300000, guid: 70c4e28d5d21147a6acac33a7175bd56, type: 3}
+    elementInShopImg: {fileID: 21300000, guid: 8bd30cfafd97549b1889e184835cc74b, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     obstacles:
     - {fileID: 7672041122249657930, guid: 4436d018f2d5546bc923f6094e701913, type: 3}
+    - {fileID: 3935336020849443261, guid: af984da23b3ab488abecaa9a27d2e6ca, type: 3}
+  - name: Collection4
+    category: 0
+    price: 40000
+    level: 0
+    elementInShopImg: {fileID: 21300000, guid: 075c7f6a6a760424cabb577a884343ee, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    obstacles:
+    - {fileID: 8913905160228834157, guid: e4cd0a23f97384110bd65632b802734d, type: 3}
+    - {fileID: 1520072821098203676, guid: 178e1f72f29cf4c699f1c78492865c74, type: 3}
   powerUpShopElements:
   - name: FirstPowerUp
     category: 0

@@ -60,9 +60,10 @@ public class Shop : MonoBehaviour
     public void SetNewPlayer(SkinShopElement newPlayer)
     {
         playerSprite.GetComponent<SpriteRenderer>().color = new Color(newPlayer.color.r, newPlayer.color.g, newPlayer.color.b);
-        playerTrail.startColor = new Color(newPlayer.color.r, newPlayer.color.g, newPlayer.color.b);
-        playerTrail.endColor = new Color(newPlayer.color.r, newPlayer.color.g, newPlayer.color.b, 0);
+        playerTrail.startColor = new Color(newPlayer.trailcolor.r, newPlayer.trailcolor.g, newPlayer.trailcolor.b, 1);
+        playerTrail.endColor = new Color(newPlayer.trailcolor.r, newPlayer.trailcolor.g, newPlayer.trailcolor.b, 0);
         playerSprite.sprite = newPlayer.newPlayerLook;
+        playerSprite.transform.localScale = new Vector3(newPlayer.scale, newPlayer.scale, newPlayer.scale);
     }
 
     public void UpgradePlayer(PlayerShopElement element){
