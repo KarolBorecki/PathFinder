@@ -43,10 +43,11 @@ public class SideGenerator : MonoBehaviour
 
     private void Generate(bool first)
     {
-        int side = Random.Range(0, 2) == 1 ? 1 : -1;
+        Responsivity.Side side = Random.Range(0, 2) == 1 ? Responsivity.Side.Right : Responsivity.Side.Left;
         Transform e = Instantiate(GetRandomFromList(elements), elementsParent);
-        e.GetComponent<SideElement>().side = side == 1 ? Responsivity.Side.Right : Responsivity.Side.Left;
+        e.GetComponent<SideElement>().side = side;
         e.position = new Vector3(0, transform.position.y, 0);
+        e.GetComponent<Responsivity>().SetPosition(0, side, maxPositions);
         if(!first) {
             e.GetComponent<SideElement>().objReference = _lastElement.gameObject.GetComponent<SideElement>();
             e.GetComponent<SideElement>().OnNewCreate();

@@ -9,13 +9,16 @@ public class Responsivity : MonoBehaviour
 
     public Side side;
     public float margin;
+
+    public bool setAtStart = true;
     
     public Vector2 maxPositions;
     
     private void Start()
     {
         maxPositions = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
-        SetPosition(margin, side, maxPositions);
+        if(setAtStart)
+            SetPosition(margin, side, maxPositions);
     }
 
     public void SetPosition(float sideMargin, Side setterSide, Vector2 mPos)

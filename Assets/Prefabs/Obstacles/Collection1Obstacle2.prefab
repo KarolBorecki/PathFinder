@@ -300,6 +300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 0
   margin: 0
+  setAtStart: 0
   maxPositions: {x: 0, y: 0}
 --- !u!114 &3848389015106077642
 MonoBehaviour:

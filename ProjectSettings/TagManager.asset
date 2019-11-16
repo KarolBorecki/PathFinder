@@ -10,6 +10,7 @@ TagManager:
   - BouncySurface
   - EnergyPowerUp
   - Void
+  - Boundry
   layers:
   - Default
   - TransparentFX

@@ -5382,6 +5382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 0
   margin: 0
+  maxPositions: {x: 0, y: 0}
 --- !u!1 &97093233
 GameObject:
   m_ObjectHideFlags: 0
@@ -5428,6 +5429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 2
   margin: -1
+  maxPositions: {x: 0, y: 0}
 --- !u!61 &97093237
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11323,6 +11325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 1
   margin: 0
+  maxPositions: {x: 0, y: 0}
 --- !u!1 &494309317
 GameObject:
   m_ObjectHideFlags: 0
@@ -11965,7 +11968,7 @@ GameObject:
   - component: {fileID: 597924196}
   m_Layer: 8
   m_Name: BoundryRight
-  m_TagString: Untagged
+  m_TagString: Boundry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12088,6 +12091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 0
   margin: 0
+  maxPositions: {x: 0, y: 0}
 --- !u!1 &623130307
 GameObject:
   m_ObjectHideFlags: 0
@@ -14060,7 +14064,7 @@ GameObject:
   - component: {fileID: 1486048233}
   m_Layer: 8
   m_Name: BoundryLeft
-  m_TagString: Untagged
+  m_TagString: Boundry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14183,6 +14187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 1
   margin: 0
+  maxPositions: {x: 0, y: 0}
 --- !u!1 &1503564000
 GameObject:
   m_ObjectHideFlags: 0
@@ -15313,6 +15318,7 @@ MonoBehaviour:
   elements:
   - {fileID: 3657910656338094281, guid: a5c3168be3ad34722995b8565710fa5f, type: 3}
   - {fileID: 7900863491801172876, guid: 4c45f7f7781734b28b53785cbd2e7243, type: 3}
+  maxPositions: {x: 0, y: 0}
 --- !u!114 &1708162808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15343,6 +15349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 3
   margin: 3
+  maxPositions: {x: 0, y: 0}
 --- !u!1 &1712758667
 GameObject:
   m_ObjectHideFlags: 0
@@ -21644,6 +21651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 2
   margin: 0
+  maxPositions: {x: 0, y: 0}
 --- !u!1 &7251928377217859658
 GameObject:
   m_ObjectHideFlags: 0
