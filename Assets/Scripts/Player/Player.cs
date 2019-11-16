@@ -59,12 +59,12 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-//        int pointsToAdd = (int) transform.position.y * 10 * (combo + 1);
-//        if (pointsToAdd > pointsInGame)
-//        {
-//            pointsInGame = pointsToAdd;
-//            pointsCounter.SetText(pointsInGame);
-//        }
+        int pointsToAdd = (int) transform.position.y * 10 * (combo + 1);
+        if (pointsToAdd > pointsInGame)
+        {
+            pointsInGame = pointsToAdd;
+            pointsCounter.SetText(pointsInGame);
+        }
 
         if (shield)
             if (_actualShieldTime < shieldTime)
@@ -168,7 +168,7 @@ public class Player : MonoBehaviour
         camMove.cameraSpeed *= shieldCamSlowDown;
         SetIsHurt(false);
 
-        AddPoints(150);
+        AddPoints(20);
     }
 
     private void DeactivateShield()
@@ -186,7 +186,7 @@ public class Player : MonoBehaviour
         if (energy > maxEnergy) energy = maxEnergy;
         SetIsHurt(false);
 
-        AddPoints(80);
+        AddPoints(15);
     }
 
     private void AddCombo()
@@ -224,7 +224,7 @@ public class Player : MonoBehaviour
 
     private void SafeBounce()
     {
-        AddPoints(50);
+        AddPoints(5);
         if (_isHurt) return;
         _camera.CameraZoomIn();
         _actualBounces++;
