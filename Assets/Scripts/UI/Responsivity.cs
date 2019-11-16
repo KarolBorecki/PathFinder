@@ -10,31 +10,31 @@ public class Responsivity : MonoBehaviour
     public Side side;
     public float margin;
     
-    private Vector2 maxPositions;
+    public Vector2 maxPositions;
     
     private void Start()
     {
         maxPositions = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
-        SetPosition(margin, side);
+        SetPosition(margin, side, maxPositions);
     }
 
-    public void SetPosition(float sideMargin, Side setterSide)
+    public void SetPosition(float sideMargin, Side setterSide, Vector2 mPos)
     {
         side = setterSide;
         margin = sideMargin;
         switch (side)
         {
             case Side.Top:
-                transform.position = new Vector2(transform.position.x, maxPositions.y + sideMargin);
+                transform.position = new Vector2(transform.position.x, mPos.y + sideMargin);
                 break;
             case Side.Bottom:
-                transform.position = new Vector2(transform.position.x, -maxPositions.y + sideMargin);
+                transform.position = new Vector2(transform.position.x, -mPos.y + sideMargin);
                 break;
             case Side.Right:
-                transform.position = new Vector2(maxPositions.x + sideMargin, transform.position.y);
+                transform.position = new Vector2(mPos.x + sideMargin, transform.position.y);
                 break;
             case Side.Left:
-                transform.position = new Vector2(-maxPositions.x + sideMargin, transform.position.y);
+                transform.position = new Vector2(-mPos.x + sideMargin, transform.position.y);
                 break;
             default:
                 transform.position = Vector3.zero;

@@ -12,9 +12,12 @@ public class SideGenerator : MonoBehaviour
     private float _randomDistance;
 
     private bool _isGenerating;
+    
+    public Vector2 maxPositions;
 
     private void Start() {
         _randomDistance = Random.Range(distance.x, distance.y);
+        maxPositions = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
     }
 
     public void StartGenerating()
