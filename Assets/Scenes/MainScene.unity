@@ -5382,6 +5382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 0
   margin: 0
+  setAtStart: 1
   maxPositions: {x: 0, y: 0}
 --- !u!1 &97093233
 GameObject:
@@ -5429,6 +5430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 2
   margin: -1
+  setAtStart: 1
   maxPositions: {x: 0, y: 0}
 --- !u!61 &97093237
 BoxCollider2D:
@@ -11325,6 +11327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 1
   margin: 0
+  setAtStart: 1
   maxPositions: {x: 0, y: 0}
 --- !u!1 &494309317
 GameObject:
@@ -12091,6 +12094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 0
   margin: 0
+  setAtStart: 1
   maxPositions: {x: 0, y: 0}
 --- !u!1 &623130307
 GameObject:
@@ -13583,7 +13587,7 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
     trailcolor: {r: 1, g: 1, b: 1, a: 1}
-    scale: 0.7
+    scale: 1
   - name: Player2
     category: 0
     price: 20000
@@ -13592,7 +13596,7 @@ MonoBehaviour:
     color: {r: 0.2818543, g: 0.6886792, b: 0.08121216, a: 1}
     newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
     trailcolor: {r: 1, g: 1, b: 1, a: 1}
-    scale: 0.7
+    scale: 1
   - name: Player3
     category: 0
     price: 20000
@@ -13601,7 +13605,7 @@ MonoBehaviour:
     color: {r: 0.9757376, g: 0, b: 1, a: 1}
     newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
     trailcolor: {r: 1, g: 1, b: 1, a: 1}
-    scale: 0.7
+    scale: 1
   - name: Player4
     category: 0
     price: 20000
@@ -13610,7 +13614,7 @@ MonoBehaviour:
     color: {r: 0.059401315, g: 0, b: 0.7075472, a: 1}
     newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
     trailcolor: {r: 1, g: 1, b: 1, a: 1}
-    scale: 0.7
+    scale: 1
   - name: Player5
     category: 0
     price: 20000
@@ -13619,7 +13623,7 @@ MonoBehaviour:
     color: {r: 0.8867924, g: 0.6960276, b: 0, a: 1}
     newPlayerLook: {fileID: 21300000, guid: ba798fa5c240544549c984568d9ec3e7, type: 3}
     trailcolor: {r: 1, g: 1, b: 1, a: 1}
-    scale: 0.7
+    scale: 1
   - name: BeachBall
     category: 0
     price: 100000
@@ -13689,7 +13693,7 @@ MonoBehaviour:
     - {fileID: 3930490032047596776, guid: 21fa72ccf9bf14307aca85c390f78451, type: 3}
   - name: Collection3
     category: 0
-    price: 30000
+    price: 45000
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 8bd30cfafd97549b1889e184835cc74b, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
@@ -13698,7 +13702,7 @@ MonoBehaviour:
     - {fileID: 3935336020849443261, guid: af984da23b3ab488abecaa9a27d2e6ca, type: 3}
   - name: Collection4
     category: 0
-    price: 40000
+    price: 70000
     level: 0
     elementInShopImg: {fileID: 21300000, guid: 075c7f6a6a760424cabb577a884343ee, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
@@ -14187,6 +14191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 1
   margin: 0
+  setAtStart: 1
   maxPositions: {x: 0, y: 0}
 --- !u!1 &1503564000
 GameObject:
@@ -15349,6 +15354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 3
   margin: 3
+  setAtStart: 1
   maxPositions: {x: 0, y: 0}
 --- !u!1 &1712758667
 GameObject:
@@ -21651,6 +21657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   side: 2
   margin: 0
+  setAtStart: 1
   maxPositions: {x: 0, y: 0}
 --- !u!1 &7251928377217859658
 GameObject:
