@@ -63,7 +63,7 @@ public class Player : MonoBehaviour
         if (pointsToAdd > pointsInGame)
         {
             pointsInGame = pointsToAdd;
-            pointsCounter.SetText(pointsInGame);
+            pointsCounter.ImmediatelySetText(pointsInGame);
         }
 
         if (shield)
@@ -149,7 +149,7 @@ public class Player : MonoBehaviour
         energy = maxEnergy;
 
         pointsInGame = 0;
-        pointsCounter.SetText(pointsInGame);
+        pointsCounter.ImmediatelySetText(pointsInGame);
 
         ResetCombo();
 
@@ -244,7 +244,7 @@ public class Player : MonoBehaviour
 
         PointsFlyAway t = Instantiate(pointsEffect, transform);
         t.SetText("+" + amount * (combo+1));
-        pointsCounter.SetText(pointsInGame);
+        pointsCounter.ImmediatelySetText(pointsInGame);
     }
 
     private void OnCollisionEnter2D(Collision2D other)

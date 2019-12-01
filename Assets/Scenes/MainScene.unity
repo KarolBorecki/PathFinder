@@ -5872,6 +5872,8 @@ MonoBehaviour:
   textNumber: 0
   textBefore: 
   handledText: {fileID: 150281415}
+  t: 0.001
+  _desiredText: 0
 --- !u!1 &182641293
 GameObject:
   m_ObjectHideFlags: 0
@@ -11813,6 +11815,8 @@ MonoBehaviour:
   textNumber: 0
   textBefore: $
   handledText: {fileID: 552965425}
+  t: 0.000001
+  _desiredText: 0
 --- !u!1 &572468425
 GameObject:
   m_ObjectHideFlags: 0
@@ -11975,7 +11979,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &597924192
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12191,6 +12195,8 @@ MonoBehaviour:
   textNumber: 0
   textBefore: $
   handledText: {fileID: 623130309}
+  t: 0.000001
+  _desiredText: 0
 --- !u!1 &633704636
 GameObject:
   m_ObjectHideFlags: 0
@@ -14072,7 +14078,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1486048229
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15517,6 +15523,8 @@ MonoBehaviour:
   - {fileID: 182641293}
   - {fileID: 1539635539}
   - {fileID: 2113013365}
+  - {fileID: 1486048228}
+  - {fileID: 597924191}
   objectsToHideOnStart:
   - {fileID: 657886139}
 --- !u!4 &1718873475
@@ -16157,6 +16165,8 @@ MonoBehaviour:
   textNumber: 1
   textBefore: '     X'
   handledText: {fileID: 1814917235}
+  t: 0.5
+  _desiredText: 0
 --- !u!114 &1814917235
 MonoBehaviour:
   m_ObjectHideFlags: 0

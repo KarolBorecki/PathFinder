@@ -27,7 +27,8 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        SetMoneyText();
+        moneyCounter.ImmediatelySetText(money);
+        shopMoneyCounter.ImmediatelySetText(money);
     }
 
     private void Update()
